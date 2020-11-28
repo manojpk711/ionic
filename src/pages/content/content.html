@@ -7,7 +7,19 @@
 </ion-header>
 
 <ion-content padding>
-  <p>
-    This is a perfect starting point for a page with primarily text content. The body is padded nicely and ready for prose.
-  </p>
+  <!-- <ion-img width="150" height="100" src="./assets/img/badu-live.png"></ion-img>
+  <ion-img width="150" height="100" src="./assets/img/badu-live.png" style="margin-left: 20px;"></ion-img>
+ <br>
+ <ion-img width="150" height="100" src="./assets/img/badu-live.png"></ion-img>
+  <ion-img width="150" height="100" src="./assets/img/badu-live.png" style="margin-left: 20px;"></ion-img>
+ <br/>
+ <ion-img width="150" height="100" src="./assets/img/badu-live.png"></ion-img>
+  <ion-img width="150" height="100" src="./assets/img/badu-live.png" style="margin-left: 20px;"></ion-img> -->
+  <ion-grid>
+    <ion-row>
+      <ion-col *ngFor="let image of ImagesArray" col-6>
+        <img src="{{image.image}}" style="margin-top: 20px;border-radius: 10px;height:200px;"/>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>

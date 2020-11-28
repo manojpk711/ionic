@@ -1,12 +1,8 @@
 <ion-header>
-
   <ion-navbar>
     <ion-title>{{ 'SEARCH_TITLE' | translate }}</ion-title>
   </ion-navbar>
-
 </ion-header>
-
-
 <ion-content>
   <ion-searchbar (ionInput)="getItems($event)" placeholder="{{ 'SEARCH_PLACEHOLDER' | translate }}"></ion-searchbar>
   <ion-list>
@@ -19,4 +15,21 @@
       <ion-note item-end *ngIf="item.note">{{item.note}}</ion-note>
     </button>
   </ion-list>
+  <ion-content>
+    <ion-grid>
+      <ion-row >
+        <ion-col *ngFor ="let item of itemp" col-6>
+          <ion-card style="height: 300px;width: 155px;">
+            <ion-card-header>
+              {{item.title}}
+            </ion-card-header>
+            <ion-card-content>
+            {{item.body}}
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-content>
 </ion-content>
+

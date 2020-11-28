@@ -1,0 +1,53 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>dashboard</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div>
+    <ion-slides autoplay="3000" loop="true" speed="500">
+      <ion-slide *ngFor="let item of slideItem">
+        <img [src]='item.avatar' style="width: 100%;height: 100px;" />
+      </ion-slide>
+    </ion-slides>
+  </div>
+  <div style="height:50px;width: 100%;margin-top: 20px;">
+    <h1 style="text-align: center;line-height: 50px;border: 1px solid;">Manoj</h1>
+  </div>
+  <div style="margin-bottom: 10px;">
+    <ion-grid> 
+      <ion-row style="margin-left: 8px;">
+        <ion-col *ngFor="let item of defaultItem" col-6>
+          <ion-card style="height:200px;width:150px;margin-left: -8px;" 
+          (click)="xYz(item.id)">
+            <img [src]="item.avatar">
+            <ion-card-header>
+              {{item.name}}
+            </ion-card-header>
+            <ion-card-content>
+              {{item.about}}
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+  <div>
+    <ion-grid>
+      <ion-row style="margin-left: 8px;">
+        <ion-col *ngFor="let item of currentItems" col-4>
+          <ion-card style="height: 150px;width:100px;margin-left: -8px;" (click)="openItem(item)">
+            <img [src]="item.profilePic" />
+            <ion-card-header>
+              {{item.name}}
+            </ion-card-header>
+            <ion-card-content>
+              {{item.about}}
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+</ion-content>

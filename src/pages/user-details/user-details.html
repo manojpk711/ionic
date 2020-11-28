@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>user-details</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+  <div style="height: 130px;">
+    <ion-slides pager="true" dir="{{dir}}" (ionSlideWillChange)="onSlideChangeStart($event)">
+      <ion-slide *ngFor="let slide of slides">
+        <img [src]="slide.image" class="slide-image"/>
+      </ion-slide>
+    </ion-slides>
+  </div>
+<div>
+  <ion-grid>
+    <ion-row style="margin-left: 8px;">
+      <ion-col *ngFor ="let item of defaultItem" col-4>
+        <ion-card style="height: 150px;width:100px;margin-left: -8px;" (click)="openItem(item)" >
+          <img [src]="item.avatar">
+          <ion-card-header>
+            {{item.name}}
+          </ion-card-header>
+          <ion-card-content>
+          {{item.about}}
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</div>
+<div>
+  <ion-grid>
+    <ion-row style="margin-left: 8px;">
+      <ion-col *ngFor ="let item of defaultItem" col-4>
+        <ion-card style="height: 150px;width:100px;margin-left: -8px;">
+          <img [src]="item.avatar">
+          <ion-card-header>
+            {{item.name}}
+          </ion-card-header>
+          <ion-card-content>
+          {{item.about}}
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</div>
+</ion-content>

@@ -7,7 +7,22 @@ import { IonicPage, NavController } from 'ionic-angular';
   templateUrl: 'content.html'
 })
 export class ContentPage {
-
-  constructor(public navCtrl: NavController) { }
+  ImagesArray:any=[];
+  constructor(public navCtrl: NavController) { 
+    this.ImagesArray=[
+      {'image':'assets/img/badu-live.png'},
+      {'image':'assets/img/bjork-live.jpg'},
+      {'image':'assets/img/badu-live.png'},
+      {'image':'assets/img/badu-live.png'},
+      {'image':'assets/img/bjork-live.jpg'},
+      {'image':'assets/img/badu-live.png'},
+      {'image':'assets/img/badu-live.png'},
+      {'image':'assets/img/bjork-live.jpg'},
+      {'image':'assets/img/badu-live.png'},
+      {'image':'assets/img/badu-live.png'},
+      {'image':'assets/img/bjork-live.jpg'},
+      {'image':'assets/img/badu-live.png'},
+    ]
+  }
 
 }

@@ -35,7 +35,6 @@ export class User {
    */
   login(accountInfo: any) {
     let seq = this.api.post('login', accountInfo).share();
-
     seq.subscribe((res: any) => {
       // If the API returned a successful response, mark the user as logged in
       if (res.status == 'success') {
@@ -45,7 +44,6 @@ export class User {
     }, err => {
       console.error('ERROR', err);
     });
-
     return seq;
   }
 
@@ -55,7 +53,6 @@ export class User {
    */
   signup(accountInfo: any) {
     let seq = this.api.post('signup', accountInfo).share();
-
     seq.subscribe((res: any) => {
       // If the API returned a successful response, mark the user as logged in
       if (res.status == 'success') {

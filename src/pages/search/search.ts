@@ -1,5 +1,7 @@
+import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { Observable } from 'rxjs';
 
 import { Item } from '../../models/item';
 import { Items } from '../../providers';
@@ -12,8 +14,13 @@ import { Items } from '../../providers';
 export class SearchPage {
 
   currentItems: any = [];
-
-  constructor(public navCtrl: NavController, public navParams: NavParams, public items: Items) { }
+  data:Observable<any>;
+  itemp:any;
+  url:string;
+  constructor(public http:HttpClient,public navCtrl: NavController, public navParams: NavParams, public items: Items) {
+    this.url="https://jsonplaceholder.typicode.com/posts";
+    this.getData();
+   }
 
   /**
    * Perform a service for the proper items.
@@ -38,4 +45,10 @@ export class SearchPage {
     });
   }
 
+  getData(){
+    this.data=this.http.get(this.url);
+    this.data.subscribe(data=>{
+      this.itemp=data;
+    })
+  }
 }

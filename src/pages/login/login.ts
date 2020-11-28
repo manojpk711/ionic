@@ -18,15 +18,12 @@ export class LoginPage {
     email: 'test@example.com',
     password: 'test'
   };
-
   // Our translated text strings
   private loginErrorString: string;
-
   constructor(public navCtrl: NavController,
     public user: User,
     public toastCtrl: ToastController,
     public translateService: TranslateService) {
-
     this.translateService.get('LOGIN_ERROR').subscribe((value) => {
       this.loginErrorString = value;
     })

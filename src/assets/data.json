@@ -1,0 +1,64 @@
+[{
+    "name": "Afghanistan",
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Afghanistan.svg",
+    "number": "Afghanistan(+93)",
+    "countrycode":"+93",
+    "shortname":"AF"
+  },
+  {
+    "name": "Albania",
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/3/36/Flag_of_Albania.svg",
+    "number": "Albania(+355)",
+    "countrycode":"+355",
+    "shortname":"AL"
+  },
+  {
+    "name": "Algeria",
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/7/77/Flag_of_Algeria.svg",
+    "number": "Algeria(+213)",
+    "countrycode":"+213",
+    "shortname":"DZ"
+  },
+  {
+    "name": "Andorra",
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/1/19/Flag_of_Andorra.svg",
+    "number": "Andorra(+376)",
+    "countrycode":"+376",
+    "shortname":"AD"
+  },
+  {
+    "name": "Angola",
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Flag_of_Angola.svg",
+    "number": "Angola(+244)",
+    "countrycode":"+244",
+    "shortname":"AO"
+  },
+  {
+    "name": "Anguilla",
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Flag_of_Anguilla.svg",
+    "number": "Anguilla(+1 264)",
+    "countrycode":"+1 264",
+    "shortname":"AI"
+  },
+  {
+    "name": "Antigua and Barbuda",
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/8/89/Flag_of_Antigua_and_Barbuda.svg",
+    "number": "Antigua and Barbuda(+1268)",
+    "countrycode":"+1268",
+    "shortname":"ag"
+  },
+  {
+    "name": "Argentina",
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Flag_of_Argentina.svg",
+    "number": "Argentina(+54)",
+    "countrycode":"+54",
+    "shortname":"AR"
+  },
+  {
+    "name": "Armenia",
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Flag_of_Armenia.svg",
+    "number": "Armenia(+374)",
+    "countrycode":"+374",
+    "shortname":"AM"
+  }
+]

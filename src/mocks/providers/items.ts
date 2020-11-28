@@ -1,18 +1,13 @@
 import { Injectable } from '@angular/core';
-
 import { Item } from '../../models/item';
-
 @Injectable()
 export class Items {
   items: Item[] = [];
-
   defaultItem: any = {
     "name": "Burt Bear",
     "profilePic": "assets/img/speakers/bear.jpg",
     "about": "Burt is a Bear.",
   };
-
-
   constructor() {
     let items = [
       {
@@ -51,17 +46,14 @@ export class Items {
         "about": "Paul is a Puppy."
       }
     ];
-
     for (let item of items) {
       this.items.push(new Item(item));
     }
   }
-
   query(params?: any) {
     if (!params) {
       return this.items;
     }
-
     return this.items.filter((item) => {
       for (let key in params) {
         let field = item[key];
@@ -74,11 +66,9 @@ export class Items {
       return null;
     });
   }
-
   add(item: Item) {
     this.items.push(item);
   }
-
   delete(item: Item) {
     this.items.splice(this.items.indexOf(item), 1);
   }

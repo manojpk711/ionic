@@ -1,5 +1,7 @@
 {
   "name": "ShipShip",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "ionic-angular"
 }

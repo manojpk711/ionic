@@ -1,0 +1,46 @@
+<!--
+  Generated template for the FruitListPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>fruit-list</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-grid>
+    <ion-row style="margin-left: 8px;">
+      <ion-col *ngFor="let code of fruitList;let i of index" col-6 style="display: contents;">
+          <div *ngFor="let child of code.i;">
+            <div *ngIf="item === 1 " style="display: contents;">
+            <ion-card style="height: 200px;width:150px;margin-left:-8px;">
+              <img [src]="child.image">
+              <ion-card-header>
+                {{child.name}}
+              </ion-card-header>
+              <ion-card-content>
+                {{child.price}}
+              </ion-card-content>
+            </ion-card>
+          </div>
+        </div>
+        <!-- <div *ngIf="item === 1" style="display: contents;">
+          <div *ngFor="let child of code.fruits;">
+            <ion-card style="height: 200px;width:150px;margin-left:-8px;">
+              <img [src]="child.image">
+              <ion-card-header>
+                {{child.name}}
+              </ion-card-header>
+              <ion-card-content>
+                {{child.price}}
+              </ion-card-content>
+            </ion-card>
+          </div>
+        </div> -->
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
